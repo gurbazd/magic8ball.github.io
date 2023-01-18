@@ -1,9 +1,42 @@
 <html>
- 
-<body>
-  <h1>Gurbaz Dhillon</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
-</body>
- 
+    <head>
+        <!-- Our stylesheet -->
+        <link rel="stylesheet" href="style.css">
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+        <title>Super Magic 8 Ball</title>
+    </head>
+    <body>
+        <main>
+            <div>
+                <img id="ball"  alt="Magic 8 Ball" src="8ball.png">
+            </div>
+            
+            <div class="matrix-form">
+                <div class="input-group">
+                  <input type="text" class="form-control matrix-input" placeholder="Ask me anything!">
+                  <div class="input-group-append">
+                    <button onClick = 'shake()' class="btn btn-outline-secondary matrix-submit" type="submit">Submit</button>
+                  </div>
+                </div>
+              </div>
+
+            <div id="fortune"></div>
+        </main>
+            
+        
+    </body>
 </html>
+
+<script src="script.js"></script>
+
+<!--
+<div>
+    <button onClick="shake()">Shake</button>
+
+</div>
+-->
